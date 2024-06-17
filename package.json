@@ -1,24 +1,27 @@
 {
-  "name": "boilerplate",
+  "name": "portfolio-2024",
   "version": "1.0.0",
-  "description": "A Boilerplate for vanilla JS and SCSS Front-end developement",
+  "description": "My personal portfolio website for 2024",
   "main": "index.js",
   "scripts": {
+    "clean": "del /S /Q dist\\*",
     "start": "webpack serve --mode development --open",
-    "build": "webpack --mode production"
+    "build": "npm run clean && webpack --mode production"
   },
   "author": "William Stephan",
   "license": "ISC",
   "dependencies": {
-    "css-loader": "^6.8.1",
-    "html-webpack-plugin": "^5.5.3",
-    "node-sass": "^9.0.0",
-    "sass-loader": "^13.3.2",
-    "style-loader": "^3.3.3"
+    "gsap": "^3.12.5"
   },
   "devDependencies": {
+    "css-loader": "^6.8.1",
     "file-loader": "^6.2.0",
+    "glob": "^10.3.10",
+    "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
+    "node-sass": "^9.0.0",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
