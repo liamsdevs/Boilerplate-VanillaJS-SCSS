@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const fs = require('fs'); 
+const fs = require('fs');
 
 function getHtmlPlugins(sourcePath) {
     let files = fs.readdirSync(sourcePath, { withFileTypes: true });
